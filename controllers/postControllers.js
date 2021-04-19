@@ -52,7 +52,6 @@ export const likePost = async (req, res) => {
   if(!req.userId) {
     return res.json({message: 'Unauthenticated'}); // likePost has access to auth and req.userId as auth is called before likePost postRoutes.js
   } 
-
   // check if post exists and get it:
   if(!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).send(`No post found with id ${id}.`);
