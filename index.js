@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   res.send('Greetings from Asante API!')
 })
 
-// Connect server application with database (db will be hosted in MDB cloud) --> https://www.mongodb.com/cloud/atlas
+// Connect server application with database (db will be hosted in MDB cloud) 
 const CONNECTION_URL = process.env.MONGODB_URI;
 
 // Heroku will use env.PORT when deployed there
