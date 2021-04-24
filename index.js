@@ -8,7 +8,6 @@ dotenv.config();
 import postRoutes from './routes/postRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 
-// app initialization:
 const app = express();
 
 // Body parser for sending the requests
