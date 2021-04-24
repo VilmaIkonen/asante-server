@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+dotenv.config();
 
 import postRoutes from './routes/postRoutes.js'
 import userRoutes from './routes/userRoutes.js'
@@ -26,7 +27,6 @@ app.get('/', (req, res) => {
 })
 
 // Connect server application with database (db will be hosted in MDB cloud) --> https://www.mongodb.com/cloud/atlas
-dotenv.config();
 const CONNECTION_URL = process.env.MONGODB_URI;
 
 // Heroku will use env.PORT when deployed there
